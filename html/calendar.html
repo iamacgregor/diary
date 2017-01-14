@@ -1,0 +1,29 @@
+<a href="#/">
+    <div id='header'>
+        <div id="headerYear">Diary</div>
+    </div>
+</a>
+
+<div id='calendar'>
+    <div ng-repeat="month in months" class="month"> 
+        <h1 class="monthLabel">{{month}}</h1> 
+
+        <div class="days">
+            <div ng-repeat="day in weekdays track by $index" class="day weekDay">{{day}}</div>
+            
+            <div ng-init="preDays = preDays(month)">
+                <div ng-repeat="day in preDays" class="day fillerDay">{{day}}</div>
+            </div>
+
+            <div ng-if="entries" ng-init="daysInMonth = daysIn(month)">
+                <div ng-repeat="day in daysInMonth"> 
+                    <day-in-month day="{{day}}" month="{{month}}"></day-in-month>
+                </div>
+            </div>
+
+            <div ng-init="postDays = postDays(month)">
+                <div ng-repeat="day in postDays" class="day fillerDay">{{day}}</div>
+            </div>
+        </div>
+    </div>
+</div>

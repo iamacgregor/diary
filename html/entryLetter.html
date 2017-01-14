@@ -1,0 +1,15 @@
+<div id='header'>
+    <a href='{{prevLink}}'><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></a>
+    <a href="#/" id="headerYear">Diary</a>
+    <a href='{{nextLink}}'><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i></a>
+</div>
+
+<div id='entryLetter'>
+    <div class="date entryText">{{date}}</div>
+    <div class="dearDavid entryText">Dear Diary, </div>
+    <div ng-repeat="paragraph in paragraphs" class="paragraph entryText">
+        {{paragraph}}
+    </div>
+    <div class="signature entryText">Sincerely, <br>Me</div>
+
+</div>

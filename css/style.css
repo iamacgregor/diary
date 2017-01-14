@@ -1,0 +1,155 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0,0,0,0.6);
+}
+
+#header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 75px;
+  width: 100%;
+  -webkit-box-shadow: 0px 2.5px 10px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2.5px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2.5px 10px 0px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index:10;
+}
+
+#headerYear {
+  color: #92A8D0;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 55px;
+  position: relative;
+}
+
+#calendar {
+  padding-top: 75px;
+  max-width: 916px;
+  height: auto;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto; 
+}
+
+#entryLetter, #openerLetter {
+  position: fixed;
+  top: 75px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  padding: 20px;
+  margin: 0 auto;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+.fa {
+  margin: 10px;
+  color: #92A8D0;
+}
+
+.month {
+  width: 189px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;/*
+  -webkit-box-shadow: 0px 2.5px 10px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2.5px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2.5px 10px 0px rgba(0,0,0,0.2);*/
+}
+
+.monthLabel {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 200;
+  margin-left: 5px;
+}
+
+.days {
+  overflow: auto;
+}
+
+.day {
+  float: left;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+  cursor: default;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.activeDay {
+  background-color: #F6CAC9;
+  color: white;
+  cursor: pointer;
+}
+
+.activeDay:hover {
+  background-color: #92A8D0;
+}
+
+.inactiveDay {
+  color: rgba(0,0,0,0.6);
+}
+
+.fillerDay {
+  color: rgba(0,0,0,0.3);
+}
+
+.button {
+  position: fixed;
+  height: 50px;
+  width: 50%;
+  max-width: 300px;
+  min-width: 160px;
+  background-color: #F6CAC9;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2.5px 10px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2.5px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2.5px 10px 0px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  margin-top: 20px;
+}
+
+.date {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.dearDavid, .date {
+  margin-bottom: 10px;
+}
+
+.signature, .dearDavid {
+  margin-top: 10px;
+}
+
+.paragraph {
+  text-indent: 20px;
+}
